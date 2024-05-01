@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url("/static/Download\ Futuristic\ mechanical\ gears\ background\ \ for\ free.jpg") no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 10px;
+      transition: opacity 0.3s ease;
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 20px; /* Add margin to separate from the links */
+    }
+    .button {
+      background-color: #4CAF50; /* Green */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      display: inline-block; /* Make the button inline block */
+    }
+    .button:hover {
+      background-color: #45a049; /* Darker Green */
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Information</h1>
+  <p>Name: M YUVAPRASATH BBA(CA) M.SC,(IT) </p>
+  <p>Email: yuvaprasathm@gmail.com</p>
+  <p>Phone: 7200111996</p>
+  <p>Address: Muslim street melpattambakkam , cuddalore</p>
+  <h1>Connect with Us</h1>
+  <a href="https://www.linkedin.com/">LinkedIn</a>
+  <a href="https://twitter.com/">Twitter</a>
+  <a href="https://www.facebook.com/">Facebook</a>
+  <div class="button-container">
+    <a href="{{ url_for('dash') }}" class="button">Back to Dashboard</a>
+  </div>
+</body>
+</html>

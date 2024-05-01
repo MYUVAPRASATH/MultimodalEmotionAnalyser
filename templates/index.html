@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Login & Registration Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url("/static/Essential-Tech-Tools-for-Your-Startup.webp");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-size: cover;
+      background-position: cover;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: xx-large;
+      font-style: sans-serif;
+      font-weight: bold;
+    }
+
+    .btnLogin-popup {
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #d9ca29; /* Green */
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    .btnLogin-popup {
+        font-size: 40px; 
+        padding: 10px 20px; 
+    }
+
+    .btnLogin-popup:hover {
+      background-color: #429839; /* Darker Green */
+    }
+    .emotion-heading {
+  font-size: 5em; 
+  color: #FFD700; 
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="emotion-heading">EMOTION ANALYSER</h1>
+    <br>
+    <br>
+    <button><a href="{{ url_for('signin') }}" class="btnLogin-popup">LOGIN</a></button>
+  </div>
+</body>
+</html>

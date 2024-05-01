@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Face Detection</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url("/static/EMOTION.avif") no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin-top: 50px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+    }
+    #video_feed2 {
+      border: 2px solid #fff;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    button {
+      background-color: rgb(87, 244, 247);
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+    button:hover {
+      background-color: #59c5c1;
+    }
+    button a {
+      text-decoration: none;
+      color: black;
+    }
+    button a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>GENDER DETECTION</h1>
+  <br>
+  <div class="container">
+    <img id="video_feed2" src="" width="1000" height="500" />
+  </div>  
+  <div class="button-container">
+  <br><br>
+    <button onclick="startCamera2()">Gender</button>
+    <button onclick="stopCamera()">Stop Camera</button>
+    <br><br>
+    <div id="textContainer"></div>
+    <button><a href="{{ url_for('dash') }}">Back To Dashboard</a></button>
+  </div>
+    
+  <script>
+    let videoElement;
+    function startCamera2() {
+      videoElement = document.getElementById("video_feed2");
+      videoElement.src = "/video_feed2";
+    }
+    function stopCamera() {
+      videoElement.src = "";
+    }
+    $(document).ready(function() {
+      $('#getTextBtn').click(function() {
+        $.ajax({
+          url: '/get_text',
+          type: 'POST',
+          success: function(response) {
+            $('#textContainer').text(response.text);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

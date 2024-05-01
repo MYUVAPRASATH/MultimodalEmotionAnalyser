@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback</title>
+  <style>
+    body {
+      background-image: url("/static/customer-experience-2.png"); /* Path to your background image */
+      background-size: cover;
+      text-align: center;
+      margin-top: 160px; /* Adjusted margin-top */
+      margin-bottom: 50px;
+      font-family: Arial, sans-serif; /* Added font-family */
+    }
+
+    form {
+      max-width: 400px; /* Set maximum width for the form */
+      margin: 0 auto; /* Center the form horizontally */
+      padding: 20px; /* Add some padding to the form */
+      background: rgba(6, 236, 236, 0.484); /* Add semi-transparent white background */
+      border-radius: 10px; /* Add rounded corners */
+    }
+
+    label {
+      display: block; /* Make labels appear on new lines */
+      margin-bottom: 10px; /* Add some space below labels */
+      font-weight: bold; /* Make labels bold */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%; /* Make input fields and textarea full width */
+      padding: 10px; /* Add padding */
+      margin-bottom: 20px; /* Add some space below input fields */
+      border-radius: 5px; /* Add rounded corners */
+      border: 1px solid #dcec62; /* Add border */
+      box-sizing: border-box; /* Include padding and border in width calculation */
+    }
+
+    textarea {
+      resize: vertical; /* Allow vertical resizing of textarea */
+    }
+
+    input[type="submit"] {
+      background-color: #a7ad31; /* Green background */
+      color: white; /* White text color */
+      padding: 10px 20px; /* Add padding */
+      border: none; /* Remove border */
+      border-radius: 5px; /* Add rounded corners */
+      cursor: pointer; /* Add pointer cursor on hover */
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+
+    button {
+      background-color: #96c1cf; /* Blue background */
+      color: rgb(213, 210, 210); /* White text color */
+      padding: 10px 20px; /* Add padding */
+      border: none; /* Remove border */
+      border-radius: 5px; /* Add rounded corners */
+      cursor: pointer; /* Add pointer cursor on hover */
+      text-decoration: none; /* Remove underline */
+      margin-top: 10px; /* Add some space above button */
+    }
+
+    button:hover {
+      background-color: #f29ea6; /* Darker blue on hover */
+    }
+  </style>
+  <script>
+    document.getElementById("feedbackForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      // Here you can add code to handle form submission, like AJAX request, etc.
+      alert("Feedback submitted successfully!");
+      window.location.href = "dash.html";
+    });
+  </script>
+</head>
+<body>
+  <form id="feedbackForm" action="{{ url_for('feedback')}}" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required /><br />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required /><br />
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" /><br />
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br />
+
+    <input type="submit" value="Submit" />
+    <button><a href="{{ url_for('dash') }}">Back To Dashboard</a></button>
+  </form>
+</body>
+</html>
