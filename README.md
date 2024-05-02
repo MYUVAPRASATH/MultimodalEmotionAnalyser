@@ -30,5 +30,5 @@ MULTIMODAL EMOTION ANALYSER
   <img src="https://github.com/MYUVAPRASATH/MultimodalEmotionAnalyser/assets/168657079/a5ee155d-d2fe-42be-941d-182fdb080b51" width="700" alt="emotion ">
 </p>
 <p align="center">
-  <img src="https://github.com/MYUVAPRASATH/MultimodalEmotionAnalyser/assets/168657079/a5ee155d-d2fe-42be-941d-182fdb080b51" width="700" alt="emotion ">
+  <img src="https://github.com/MYUVAPRASATH/MultimodalEmotionAnalyser/assets/168657079/c9573115-8de0-4dbb-8503-39201785d217" width="700" alt="emotion ">
 </p>
