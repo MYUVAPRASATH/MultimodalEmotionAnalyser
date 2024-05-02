@@ -130,3 +130,11 @@ Contact page:
 
 The contact page provides users with multiple channels, including email, phone, 
 address, and social media links, to connect with the admin for inquiries or assistance.
+
+REFERENCES
+
+❖ https://chat.openai.com/
+❖ https://gemini.google.com/app
+❖ https://www.geeksforgeeks.org/flask-tutorial/
+❖ https://www.geeksforgeeks.org/machine-learning/
+❖ https://www.simplilearn.com/tutorials/deep-learning-tutorial/deep-learning-algorithm
