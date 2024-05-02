@@ -32,7 +32,9 @@ MULTIMODAL EMOTION ANALYSER
 <p align="center">
   <img src="https://github.com/MYUVAPRASATH/MultimodalEmotionAnalyser/assets/168657079/c9573115-8de0-4dbb-8503-39201785d217" width="700" alt="emotion ">
 </p>
+
 ABSTRACT
+
 Emotion Analyzer is an exciting and innovative application of machine learning 
 techniques. The primary goal is to create a system that can accurately classify a range of 
 human emotions such as happiness, sadness, anger, and more. This system will be trained 
@@ -54,3 +56,56 @@ and efficient tool capable of accurately understanding and interpreting human em
 diverse contexts. This iterative process may involve fine-tuning the model architecture, 
 optimizing hyperparameters, and expanding the training dataset to improve performance 
 across different demographics and cultural backgrounds.
+
+PROJECT DESCRIPTION
+
+EMOTION ANALYSER
+Utilizing facial recognition technology, our emotion analyser project identifies 
+emotions and determines the user's current mood. It provides real-time gender detection 
+alongside precise emotion categorization. By analysing facial expressions, it accurately gauges 
+the user's emotional state. The project offers a seamless interface for users to interact with, 
+providing instant feedback on their emotional disposition. With advanced algorithms, it 
+enhances user experience by offering tailored responses based on detected emotions.
+
+MODULE:
+The project “Multimodal Emotion Analyser” deals with the following modules:
+✓ Login and Signup page
+✓ Emotion page
+✓ Gender page
+✓ Feedback page
+✓ Contact page
+✓ About page
+
+Emotion page:
+This project focuses on developing a system for real-time emotion detection and audio 
+recognition using machine learning techniques. By analysing audio input, the system will 
+classify emotions and detect various audio attributes, enhancing applications in sentiment 
+analysis, speech recognition, and beyond.
+Gender page:
+Developing a gender detection project involves creating an algorithm that accurately 
+identifies the gender of individuals based on facial features or voice characteristics. This project 
+aims to implement machine learning models, such as convolutional neural networks or support 
+vector machines, to classify gender with high precision using relevant datasets. The application 
+of this technology spans from demographic analysis to targeted marketing strategies.
+3
+Login and Signup page:
+A project for a login and signup page aims to create a user authentication system, 
+allowing users to securely log in or register for access to a platform or service. This involves 
+designing user interfaces for inputting credentials, implementing backend functionality to 
+manage user data, and ensuring security measures such as encryption and validation are in 
+place
+Admin login page:
+The admin login page provides access for administrators to view user feedback. It offers 
+a secure interface for monitoring and managing user interactions.
+Feedback page:
+Utilizing MongoDB, this project aims to collect and analyze feedback data including 
+names, Gmail addresses, subjects, and opinions to facilitate structured insights and improve 
+decision-making processes.
+About page:
+The 'About Us' page offers an overview of our project, highlighting its utilization of 
+MongoDB and OpenCV technologies. Our objective is to create an efficient emotion analyzer 
+system by leveraging these tools, enhancing user experience and understanding of facial 
+emotion detection.
+Contact page:
+The contact page provides users with multiple channels, including email, phone, 
+address, and social media links, to connect with the admin for inquiries or assistance.
